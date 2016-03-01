@@ -1,5 +1,10 @@
 body {
-  background: #f9e933;
+  min-height: 100%;
+  position:relative;
+}
+
+body.signup{
+    margin:auto;
 }
 
 header, main, footer {
@@ -7,46 +12,190 @@ header, main, footer {
 }
 
 header .container, main .container, footer .container {
-  max-width: 855px;
+  
   margin: auto;
 }
 
 header {
-  background: white;
-  overflow: auto;
+  background: lightslategrey;
+  overflow: hidden;
+  height:90px;
+  
 }
 
-header h1 {
+h1 {
+  color: black; 
+  font-weight: bold;
   float: left;
-  width: 570px;
+  text-align: center;
 }
 
 header nav {
   float: right;
-  width: 285px;
+   margin-right: 10%;
 }
 
 main {
   background: white;
   overflow: auto;
+  margin-top: 20px;
+  padding-bottom: 180px;
 }
 
 main .left {
   float: left;
   width: 570px;
+ 
+  margin:100px;
+  margin-left: 400px;
 }
 
 main .right {
-  float: right;
   width: 285px;
+  float:right;
 }
 
 footer .left {
   float: left;
-  width: 570px;
 }
 
 footer .sitemap {
   float: right;
-  width: 285px;
+ }
+
+main .ques{
+    background: lightgray;
+    width: 800px;
+    margin:auto;  
+    border-radius: 25px;
+   
+    -webkit-box-shadow: 21px 18px 30px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 21px 18px 30px -5px rgba(0,0,0,0.75);
+    box-shadow: 15px 15px 20px -5px rgba(0,0,0,0.4);
+}
+
+.faqtitle
+{
+    text-align: center;
+    color: darkblue;
+    width: 100%;
+}
+
+main .signup{
+    background: lightgrey;
+    width:500px;
+    margin:auto;
+    -webkit-box-shadow: 21px 18px 30px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: 21px 18px 30px -5px rgba(0,0,0,0.75);
+     box-shadow: 15px 15px 20px -5px rgba(0,0,0,0.4);
+}
+
+label{
+     
+     color: darkblue; 
+     display: inline-block;
+     font-weight: bold;
+     clear: left;
+     width:100px;
+     text-align: right; 
+} 
+ 
+input{
+     padding:20px;
+     display:inline-block;
+}
+ 
+.signuptitle{
+     text-align: center;
+     color: darkblue;
+     width: 100%;
+}
+
+ .alignbutton {
+    display:block;
+    text-align:center;
+} 
+ 
+button{
+    font-weight: bold;
+    text-align:center;
+    margin: auto;
+   -moz-box-shadow: 0 10px 14px -7px #276873;
+   -webkit-box-shadow: 0 10px 14px -7px #276873;
+    box-shadow: 0 10px 14px -7px #276873;
+	background-color:#0b1299;
+	-moz-border-radius:8px;
+	-webkit-border-radius:8px;
+	border-radius:8px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:20px;
+	padding:13px 32px;
+	text-decoration:none;
+	text-shadow:0 1px 0 #505666;
+}
+.myButton:hover {
+	background-color:#4b43c4;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+.indextitle{
+   font-weight: bold; 
+   font-size: 300%;
+   text-shadow: 2px 2px 0 white,
+               4px 4px 0 black;
+}
+
+.desc{
+    font-weight: bold;
+    
+}
+
+.image{
+    display: block;
+    border: 10px outset lightblue;
+    border-radius: 25px;
+    padding:20px;
+    background: white;
+    float:right;
+    margin:100px;
+    margin-right: 600px;
+}
+
+header nav a:link, a:visited {
+    background-color: darkblue;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;	
+    text-decoration: none;
+    display: inline-block;
+}
+
+footer{
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:170px;
+    background: lightslategrey;
+}
+
+html{
+    height:100%
+}
+
+main .ques{
+   padding:15px;  
+}
+
+ label{
+   padding:20px;  
+ }
+ 
+ main .signup{
+   padding: 20px; 
 }
